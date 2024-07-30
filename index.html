@@ -30,7 +30,16 @@
         }
 
         h1 {
-            color: var(--cat-lavender);
+            background-image: linear-gradient(to right, var(--cat-rosewater), var(--cat-flamingo), var(--cat-pink), var(--cat-lavender));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: gradientText 2s ease infinite;
+        }
+
+        @keyframes gradientText {
+            0% { background-position: 200% 0; }
+            100% { background-position: 0 0; }
         }
     </style>
 </head>
